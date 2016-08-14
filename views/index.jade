@@ -1,0 +1,15 @@
+extends layout
+
+block content
+  h1= title
+  h2 Usage
+  h3 Image search endpoint
+    code  #{host}/api/imagesearch/<search teram>?offset=x
+  p This will return an array of search results paginated to x. Each result will contain the URL of the image along with some  metadata of the image.
+  h3 Latest image search endpoint
+    code  #{host}/api/latest/imagesearch
+  p This will return an array of searches made so far. If no search has been made and you are calling this endpoint, then you will get this output
+    code  {status: 'No search made'}
+  blockquote
+    strong
+      a(href="https://www.freecodecamp.com/challenges/image-search-abstraction-layer", target="_blank") https://www.freecodecamp.com/challenges/image-search-abstraction-layer
