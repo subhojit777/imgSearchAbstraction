@@ -4,8 +4,8 @@ block content
   h1= title
   h2 Usage
   h3 Image search endpoint
-    code  #{host}/api/imagesearch/<search teram>?offset=x
-  p This will return an array of search results paginated to x. Each result will contain the URL of the image along with some  metadata of the image.
+    code  #{host}/api/imagesearch/SEARCH_TERM?offset=x
+  p This will return an array of search results based on "SEARCH_TERM" paginated to x. Each result will contain the URL of the image along with some  metadata of the image.
   h3 Latest image search endpoint
     code  #{host}/api/latest/imagesearch
   p This will return an array of searches made so far. If no search has been made and you are calling this endpoint, then you will get this output
